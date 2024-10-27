@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Laptop Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Offers</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>Aditya Laptop Shop</h1>
+        <p>Get the best prices and special offers this Diwali!</p>
+    </header>
+
+    <!-- Product Section -->
+    <div class="products">
+        <div class="product">
+            <img src="images/dell.jpg" alt="Dell Inspiron">
+            <h2>Dell Inspiron</h2>
+            <p>Price: $700</p>
+            <button onclick="addToCart('Dell Inspiron', 700)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="images/hp.jpg" alt="HP Pavilion">
+            <h2>HP Pavilion</h2>
+            <p>Price: $800</p>
+            <button onclick="addToCart('HP Pavilion', 800)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="images/lenovo.jpg" alt="Lenovo ThinkPad">
+            <h2>Lenovo ThinkPad</h2>
+            <p>Price: $750</p>
+            <button onclick="addToCart('Lenovo ThinkPad', 750)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="images/macbook.jpg" alt="Apple MacBook Air">
+            <h2>Apple MacBook Air</h2>
+            <p>Price: $950</p>
+            <button onclick="addToCart('Apple MacBook Air', 950)">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Shopping Cart -->
+    <div class="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cartItems"></ul>
+        <p id="totalPrice">Total: $0</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Aditya Laptop Shop | All Rights Reserved</p>
+        <p>Contact us: +123-456-7890 | aditya@laptopshop.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
